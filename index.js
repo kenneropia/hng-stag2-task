@@ -17,16 +17,17 @@ app.post("/", (req, res) => {
  */
   let operation_type = null;
   let operationType = req.body.operation_type;
-  if (operationType.includes("add")) {
+
+  if (operationType.includes("add") || operationType.includes("+")) {
     operation_type = "addition";
     result = x + y;
   }
-  if (operationType.includes("sub")) {
+  if (operationType.includes("sub") || operationType.includes("-")) {
     operation_type = "subtraction";
     result = x - y;
   }
 
-  if (operationType.includes("mul")) {
+  if (operationType.includes("mul") || operationType.includes("*")) {
     operation_type = "multiplication";
     result = x * y;
   }
