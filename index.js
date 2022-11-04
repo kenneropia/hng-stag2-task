@@ -45,7 +45,7 @@ app.post("/", (req, res) => {
   //   }
 
   console.log({
-    slackUserName: "aaronkenny",
+    slackUsername: "aaronkenny",
     result,
     operation_type,
   });
