@@ -37,7 +37,7 @@ app.post("/", (req, res) => {
   }
 
   if (operationType.includes("pro")) {
-    operation_type = "production";
+    operation_type = "product";
     result = x * y;
   }
   //   if (operationType.includes("div")) {
