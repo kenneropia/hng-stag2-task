@@ -30,7 +30,15 @@ app.post("/", (req, res) => {
     operation_type = "multiplication";
     result = x * y;
   }
+  if (operationType.includes("sum")) {
+    operation_type = "sum";
+    result = x + y;
+  }
 
+  if (operationType.includes("pro")) {
+    operation_type = "production";
+    result = x * y;
+  }
   //   if (operationType.includes("div")) {
   //     result = x / y;
   //   }
