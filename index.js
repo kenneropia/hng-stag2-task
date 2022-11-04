@@ -16,7 +16,7 @@ app.post("/", (req, res) => {
   @type {string} operationType
  */
   let operation_type = null;
-  let operationType = req.body.operation_type;
+  let operationType = req.body.operation_type.toLowerCase();
 
   if (operationType.includes("add") || operationType.includes("+")) {
     operation_type = "addition";
