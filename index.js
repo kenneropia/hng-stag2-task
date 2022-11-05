@@ -41,7 +41,7 @@ app.post("/", (req, res) => {
     result = x * y;
   }
   if (operationType.includes("sum")) {
-    operation_type = "multiplication";
+    operation_type = "addition";
     result = x + y;
   }
 
@@ -54,7 +54,7 @@ app.post("/", (req, res) => {
     result = x * y;
   }
 
-  if (operationType.includes("diff") || operationType.includes("-")) {
+  if (operationType.includes("diff")) {
     operation_type = "subtraction";
     result = x - y;
   }
