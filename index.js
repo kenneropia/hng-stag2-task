@@ -41,12 +41,16 @@ app.post("/", (req, res) => {
     result = x * y;
   }
   if (operationType.includes("sum")) {
-    operation_type = "sum";
+    operation_type = "multiplication";
     result = x + y;
   }
 
   if (operationType.includes("pro")) {
-    operation_type = "product";
+    operation_type = "multiplication";
+    result = x * y;
+  }
+  if (operationType.includes("times")) {
+    operation_type = "multiplication";
     result = x * y;
   }
   //   if (operationType.includes("div")) {
