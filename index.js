@@ -7,6 +7,15 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({
+    slackUsername: "aaronkenny",
+    backend: true,
+    age: 21,
+    bio: "Hi, my name is kenny, Im a backend developer. nice to meet u",
+  });
+});
+
 app.post("/", (req, res) => {
   let result = null;
   let x = Number(req.body.x);
