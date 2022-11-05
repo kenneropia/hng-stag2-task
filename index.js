@@ -53,6 +53,12 @@ app.post("/", (req, res) => {
     operation_type = "multiplication";
     result = x * y;
   }
+
+  if (operationType.includes("diff") || operationType.includes("-")) {
+    operation_type = "subtraction";
+    result = x - y;
+  }
+
   //   if (operationType.includes("div")) {
   //     result = x / y;
   //   }
